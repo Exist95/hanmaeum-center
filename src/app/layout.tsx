@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   },
   description: "한마음재가복지센터 홈페이지",
   openGraph: {
-    title: "Gesturs - The Notion Blog",
-    description: "A blog built with Next.js and Notion",
+    title: "한마음재가복지센터",
+    description: "대구 서구 한마음재가복지센터",
     url: siteUrl,
-    siteName: "Gesturs",
+    siteName: "한마음재가복지센터",
     images: [
       {
         url: `${siteUrl}/opengraph-image.png`,
