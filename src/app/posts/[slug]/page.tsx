@@ -113,14 +113,14 @@ export default async function PostPage({ params }: PostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <article className="max-w-3xl mx-auto prose dark:prose-invert">
+      <article className="mx-auto prose dark:prose-invert">
         {post.coverImage && (
-          <div className="relative aspect-video w-full mb-8 rounded-lg overflow-hidden">
+          <div className="relative aspect-video w-full mb-8 overflow-hidden rounded-2xl">
             <Image
               src={post.coverImage}
               alt={post.title}
               fill
-              className="object-cover"
+              className="object-fill rounded-2xl"
               priority
             />
           </div>
@@ -129,9 +129,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <header className="mb-8">
           <div className="flex items-center gap-4 text-muted-foreground mb-4">
             <time>{format(new Date(post.date), "MMMM d, yyyy")}</time>
-            {post.author && <span>By {post.author}</span>}
-            <span>{calculateReadingTime(wordCount)}</span>
-            <span>{wordCount} words</span>
+            <span>by 한마음재가복지센터</span>
           </div>
 
           <h1 className="text-4xl font-bold mb-4 text-foreground">
