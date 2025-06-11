@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "한마음재가복지센터",
-    template: "대구 서구 한마음재가복지센터!",
+    template: "대구 서구 한마음재가복지센터",
   },
   description: "한마음재가복지센터 홈페이지",
   openGraph: {
