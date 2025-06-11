@@ -1,0 +1,5 @@
+makefile
+CopyEdit
+User-agent: *
+Disallow:
+Sitemap: https://hanmaeum-center.vercel.app/sitemap.xml
