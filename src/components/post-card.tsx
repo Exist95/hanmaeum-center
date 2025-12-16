@@ -52,10 +52,10 @@ export default function PostCard({ post }: PostCardProps) {
 
       <CardHeader className="space-y-2">
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-1.5">
-            <Calendar className="h-4 w-4" />
-            <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
-          </div>
+<div className="flex items-center gap-1.5">
+  <Calendar className="h-4 w-4" />
+  <span>{format(new Date(post.date), "yyyy. MM. dd")}</span>
+</div>
           {/* <div className="flex items-center gap-1.5">
             <Clock className="h-4 w-4" />
             <span>{readingTime}</span>
