@@ -128,7 +128,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
         <header className="mb-8">
           <div className="flex items-center gap-4 text-muted-foreground mb-4">
-            <time>{format(new Date(post.date), "MMMM d, yyyy")}</time>
+            <time>{format(new Date(post.date), "yyyy. MM. dd")}</time>
             <span>by 한마음재가복지센터</span>
           </div>
 
