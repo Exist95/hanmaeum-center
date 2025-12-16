@@ -56,10 +56,10 @@ export default function PostCard({ post }: PostCardProps) {
             <Calendar className="h-4 w-4" />
             <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          {/* <div className="flex items-center gap-1.5">
             <Clock className="h-4 w-4" />
             <span>{readingTime}</span>
-          </div>
+          </div> */}
         </div>
         <div className="group-hover:pr-8 transition-all duration-300">
           <h2 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
